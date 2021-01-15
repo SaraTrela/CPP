@@ -1,0 +1,21 @@
+#include <iostream>
+#define USE_MATH_DEFINE
+#include <cmath> //biblioteka matematyczna//
+using namespace std;
+
+int main()
+{
+
+float kat, radian;
+
+radian = kat*M_PI/180;
+
+cout << "Podaj wartość kąta w stopniach: ";
+cin >> kat;
+
+cout << "Sinus kąta wynosi: " << sin(radian) << "." << endl;
+cout << "Cosinus kąta wynosi: " << cos(radian) << "." << endl;
+
+return 0;
+
+}

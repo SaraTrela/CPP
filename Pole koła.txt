@@ -1,0 +1,20 @@
+#include <iostream>
+#define USE_MATH_DEFINE
+#include<cmath>
+using namespace std;
+
+int main()
+{
+
+float promien, pole;
+
+cout << "Podaj wartość promienia: " << endl;
+cin >> promien;
+
+pole = M_PI*promien*promien;
+
+cout << "Pole koła wynosi: " << pole << endl;
+
+return 0;
+
+}
