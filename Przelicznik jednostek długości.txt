@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+int main() {
+
+int dlugosc, jednostka;
+
+cout << "Wprowadź długość: ";
+cin >> dlugosc;
+cout << "Wprowadź jednostkę (0 to mm, 1 to cm, 2 to m): ";
+cin >> jednostka;
+
+if(dlugosc<=0){
+    cout << "Długość musi być większa od 0." << endl;
+}
+else if(jednostka==0){
+    cout << dlugosc << " milimetrów, " << dlugosc * 0.1 <<  " centymetrów, " << dlugosc * 0.001 << " metrów " << endl;
+}
+else if(jednostka==1){
+    cout << dlugosc << " centymetrów, " << dlugosc * 10 << " milimetrów, " << dlugosc * 0.01 << " metrów " << endl;
+}
+else if(jednostka==2){
+    cout << dlugosc << " metrów, " << dlugosc * 100 << " centymetrów, " << dlugosc * 1000 << " milimetrów  " << endl;
+}
+else{
+    cout << "Podałeś nieprawidłową jednostkę." << endl;
+}
+
+return 0;
+}

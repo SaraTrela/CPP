@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+
+int ileliczb, liczba;
+float suma;
+//float a, b, c;
+
+cout << "Podaj, ile liczb chcesz wprowadzić: ";
+cin >> ileliczb;
+if(ileliczb>=0){
+    cout << "Wprowadź liczby: ";
+
+    for(int i=0; i<ileliczb; i++){
+        cin >> liczba;
+        suma+=liczba; //dodawanie wartości liczba do sumy - zapętlone
+    }
+
+cout << "Średnia wynosi " << suma/ileliczb << endl;
+}
+else
+cout << "Podaj liczbę dodatnią." << endl;
+
+return 0;
+
+}

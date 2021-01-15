@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+
+//firstname, lastname, indexnumber, field of study and term//
+
+string firstname, lastname, indexnumber, fieldofstudy, term;
+
+cout << "Jak masz na imię?" << endl;
+cin >> firstname;
+cout << "Jak masz na nazwisko?" << endl;
+cin >> lastname;
+cout << "Jaki jest twój numer indeksu?" << endl;
+cin >> indexnumber;
+cout << "Na jakim kierunku studiujesz?" << endl;
+cin >> fieldofstudy;
+cout << "Na którym jesteś roku?" << endl;
+cin >> term;
+
+cout << "Witaj " << firstname << " " << lastname << "! Twój numer indeksu to " << indexnumber << ". Jesteś na " << term << " roku na kierunku " << fieldofstudy << "." << endl;
+
+return 0;
+
+}
